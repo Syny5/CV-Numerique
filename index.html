@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Shojumaru&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+      <script src="assets/js/angular/angular.min.js"></script>
+      <script src="assets/js/angular/angular-route.min.js"></script>
+      <title></title>
+      <base href="./">
+  </head>
+  <body ng-app="myApp">
+      <!-- container Bootstrap -->
+      <div class="container-fluid">
+          <!-- header -->
+          <header>
+            <!-- Informations principales et photo -->
+            <div class="d-flex justify-content-around align-items-center divHigh">
+              <div class="d-flex flex-column justify-content-center align-items-center textHigh">
+                <h1 class="infos" id="myName">Victor Demilly</h1>
+                <span class="infos" id="myAge">25 ans</span>
+                <h2 class="infos" id="myJob">Développeur Web Junior</h2>
+                <!-- Logos Réseaux Sociaux -->
+                <div class="">
+                  <a href="https://github.com/Syny5"><img src="assets/img/github.png" class="iconSocialNetwork" id="githubIcon" alt="icône github"></a>
+                  <a href="https://www.linkedin.com/in/victor-demilly/"><img src="assets/img/linkedin.png" class="iconSocialNetwork" alt="icône linkedin"></a>
+                  <a href=""><img src="assets/img/mail.png" class="iconSocialNetwork" id="mailIcon" alt="Icône Mail" ng-click="mailAdress = true; phoneNumber = false; print = false;"></a>
+                  <a href=""><img src="assets/img/phone.png" class="iconSocialNetwork" ng-click="phoneNumber = true; mailAdress = false; print = false;" id="telIcon" alt="Icône téléphone"></a>
+                  <a href=""><img method="get" action="file.doc" src="assets/img/print.png" class="iconSocialNetwork" id="printIcon" alt="icône imprimer" ng-click="print = true; phoneNumber = false; mailAdress = false;"></a>
+                  <div class="alert alert-secondary alert-dismissible fade show" ng-show="mailAdress" role="alert">
+                    <button type="button" class="close" ng-click="mailAdress = false" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong><a href="mailto:vicdemilly@gmail.com">vicdemilly@gmail.com</a></strong>
+                  </div>
+                  <div class="alert alert-secondary alert-dismissible fade show" ng-show="phoneNumber" role="alert">
+                    <button type="button" class="close" ng-click="phoneNumber = false" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>06 70 17 38 01</strong>
+                  </div>
+                  <div class="alert alert-secondary alert-dismissible fade show" ng-show="print" role="alert">
+                    <button type="button" class="close" ng-click="print = false" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong><a href="assets/pdf/CV_Victor_Demilly.pdf" download="CV_Victor_Demilly">Télécharger le CV</a></strong>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img id="profilPhoto" src="assets/img/victor">
+              </div>
+            </div>
+          </header>
+          <!-- main -->
+          <main ng-view>
+
+          </main>
+          <!-- footer -->
+          <footer>
+
+          </footer>
+      </div>
+      <!-- scripts JQuery, Popper, Angular et Bootstrap-->
+      <script src="assets/js/jquery-3.4.0.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Autres librairies -->
+      <script src="assets/js/angular/angular-animate.min.js"></script>
+      <script src="assets/js/angular/progressbar.min.js"></script>
+      <script src="assets/js/aos.js"></script>
+      <!-- Mes scripts -->
+      <script src="assets/js/main.js"></script>
+  </body>
+</html>

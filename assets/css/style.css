@@ -1,0 +1,261 @@
+/* Corps de la page */
+body{
+  background-color: #36393f;
+}
+
+/* Div contenant nom, age, job, photo, réseaux... */
+.divHigh{
+  height: 300px;
+  background-image: url(../img/snowmelt.jpg);
+  object-fit: contain;
+}
+
+/* Titres de la Navbar */
+.navTitles{
+  color: #48a0b5;
+  font-weight: bold;
+}
+
+/* Textes noirs */
+.blackText{
+  color: black;
+  margin: auto;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a{
+  color: #80D0D0;
+}
+
+/* Liens au survol */
+a:hover{
+  color: white;
+}
+
+/* Photo de moi */
+#profilPhoto{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 4px 8px 20px;
+}
+
+/* Réseaux sociaux (logo) */
+.iconSocialNetwork{
+  width: 38px;
+}
+#githubIcon{
+  width: 45px;
+}
+#printIcon{
+  width: 38px;
+  margin-left: 4px;
+}
+#mailIcon{
+  width: 39px;
+  margin-left: 4px;
+}
+#telIcon{
+  width: 38px;
+  margin-left: 4px;
+}
+
+/* Textes informatifs (nom, age, profession) */
+.infos{
+  color: black;
+  text-align: center;
+}
+
+/* Paragraphes */
+p{
+  color: white;
+  text-align: center;
+}
+
+/* Texte Nom */
+#myName{
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Shojumaru', cursive;
+}
+
+/* Texte âge */
+#myAge{
+  font-weight: bold;
+  font-size: 24px;
+  opacity: 0.7;
+  font-family: 'Merriweather', serif;
+}
+
+/* Texte Profession */
+#myJob{
+  font-size: 28px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* Titres (familles ompétences, titres formation, expériences...) */
+h3{
+  text-align: center;
+  color: #80D0D0;
+  font-weight: bold;
+  font-size: 26px;
+  font-style: italic;
+  font-family: 'Roboto', serif;
+}
+
+/* Compétences */
+.skills{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/* Sous-titres des modal */
+.modalsSubtitles{
+  color: black;
+  font-style: 18px;
+}
+
+/* Images drapeaux */
+.flags{
+  height: 30px;
+  width: 50px;
+}
+
+/* Sous-titre "Autres compétences" */
+#diversText{
+  margin-top: 20px;
+}
+
+/* Textes Français & Anglais (compétences) */
+.langues{
+  margin: auto;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.otherSkills{
+  margin-top: -10px;
+}
+
+/* Liens Réseaux Sociaux survol */
+.iconSocialNetwork:hover
+{
+  /* Rotation des liens au survol */
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+
+  /* Zoom de 10% des liens au survol */
+  -webkit-transform:scale(1.10); /* Safari et Chrome */
+  -moz-transform:scale(1.10); /* Firefox */
+  -ms-transform:scale(1.10); /* Internet Explorer 9 */
+  -o-transform:scale(1.10); /* Opera */
+  transform:scale(1.10);
+  text-decoration: none;
+}
+
+/* Page projet */
+/* Image contenus dans les div */
+.projectsDiv img{
+  width: 80%;
+  border-radius: 10%;
+  box-shadow: 4px 8px 20px;
+  transition: 2s ease-in-out;
+}
+
+.funDiv img{
+  width: 60%;
+}
+
+/* Format mobile */
+@media all and (max-width : 600px){
+  .divHigh{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 420px;
+  }
+  .textHigh{
+    margin-top: -10px;
+  }
+}
+/* Format md */
+@media all and (max-width : 768px){
+  #frameworksText{
+    margin-top: 20px;
+  }
+  #diversText{
+    margin-top: 20px;
+  }
+  .progress,.progress-bar{
+    width: 75%;
+  }
+  .subSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #langageText{
+    margin-bottom: 0px;
+  }
+  #frameworksText{
+    margin-bottom: 0px;
+  }
+  #diversText{
+    margin-bottom: 0px;
+  }
+}
+
+/* Design des progressbar */
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	transition:0.1s linear;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}

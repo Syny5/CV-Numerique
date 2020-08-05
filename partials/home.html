@@ -1,0 +1,97 @@
+<div ng-controller="homeController">
+  <!-- Navbar -->
+  <ul class="nav nav-tabs justify-content-center mt-3">
+    <li class="nav-item">
+      <a class="nav-link active navTitles" href="#!/home">Compétences</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTitles" href="#!/formations">Formations</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTitles" href="#!/experiences">Expériences</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTitles" href="#!/projets">Projets</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navTitles" href="#!/loisirs">Loisirs</a>
+    </li>
+  </ul>
+  <!-- Compétences -->
+  <div class="d-flex justify-content-around mt-4">
+    <div class="d-flex">
+      <img src="assets/img/fr.svg" class="flags" alt="drapeau français">
+      <p class="langues">Français (natif)</p>
+    </div>
+    <div class="d-flex">
+      <img src="assets/img/uk.svg" class="flags" alt="drapeau royaume-uni">
+      <p class="langues">Anglais (C1)</p>
+    </div>
+  </div>
+  <div class="row mt-3 allSkills">
+    <!-- Langages -->
+    <div class="col-md-6 subSkills">
+      <h3 id="langageText mb-4">Langages</h3>
+      <div class="skillbar clearfix" data-percent="90%">
+      	<div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+      	<div class="skillbar-bar" style="background: #e67e22;"></div>
+      	<div class="skill-bar-percent">90%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="70%">
+      	<div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+      	<div class="skillbar-bar" style="background: #3498db;"></div>
+      	<div class="skill-bar-percent">70%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="50%">
+      	<div class="skillbar-title" style="background: #edd628;"><span>JavaScript</span></div>
+      	<div class="skillbar-bar" style="background: #fce537;"></div>
+      	<div class="skill-bar-percent">50%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="30%">
+      	<div class="skillbar-title" style="background: #616491;"><span>PHP</span></div>
+      	<div class="skillbar-bar" style="background: #868bc9;"></div>
+      	<div class="skill-bar-percent">30%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="30%">
+      	<div class="skillbar-title" style="background: #4A4A4A;"><span>SQL</span></div>
+      	<div class="skillbar-bar" style="background: #636262;"></div>
+      	<div class="skill-bar-percent">30%</div>
+      </div>
+    </div>
+    <!-- Frameworks et bibliothèqyes -->
+    <div class="col-md-6 subSkills">
+      <h3 id="frameworksText mb-4">Frameworks, bibliothèques et CMS</h3>
+      <div class="skillbar clearfix" data-percent="90%">
+      	<div class="skillbar-title" style="background: #473466;"><span>Bootstrap</span></div>
+      	<div class="skillbar-bar" style="background: #61458e;"></div>
+      	<div class="skill-bar-percent">90%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="60%">
+      	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+      	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+      	<div class="skill-bar-percent">60%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="40%">
+      	<div class="skillbar-title" style="background: #1e8cbe;"><span>Wordpress</span></div>
+      	<div class="skillbar-bar" style="background: #2ca1d3;"></div>
+      	<div class="skill-bar-percent">40%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="20%">
+      	<div class="skillbar-title" style="background: #c4352f;"><span>AngularJS</span></div>
+      	<div class="skillbar-bar" style="background: #de3c30;"></div>
+      	<div class="skill-bar-percent">20%</div>
+      </div>
+      <div class="skillbar clearfix" data-percent="20%">
+      	<div class="skillbar-title" style="background: #9bdc20;"><span>Canvas</span></div>
+      	<div class="skillbar-bar" style="background: #beeb4e;"></div>
+      	<div class="skill-bar-percent">20%</div>
+      </div>
+    </div>
+  </div>
+  <!-- Autres compétences  -->
+  <div class="mb-4 otherSkills">
+    <h3 id="diversText">Autres compétences</h3>
+    <p class="skills">MySQL, PHPMyAdmin, Versionning (git), Linux (terminal), Expressions Régulières (regex), Rédaction SEO, Joomla!,
+      Animation de Réseaux Sociaux, Bonne capacité syntaxique, Autonomie, Pack Office (Word, Excel, Powerpoint), Photoshop (bases)</p>
+  </div>
+</div>
