@@ -169,6 +169,11 @@ h3{
   object-fit: cover;
   height: 234px;
 }
+@media (min-width: 576px) and (max-width: 1400px){
+  .projectsDiv img{
+    height: 180px;
+  }
+}
 
 .funDiv img{
   width: 60%;
