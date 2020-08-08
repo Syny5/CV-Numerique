@@ -166,6 +166,8 @@ h3{
   border-radius: 10%;
   box-shadow: 4px 8px 20px;
   transition: 2s ease-in-out;
+  object-fit: cover;
+  height: 234px;
 }
 
 .funDiv img{
